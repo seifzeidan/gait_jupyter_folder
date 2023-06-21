@@ -1,0 +1,21 @@
+############################################################
+
+IDNet gait dataset contains motion data from 50 subjects, during a period of six months using Android smartphones worn in the right front pocket of the users' trousers. Several acquisition sessions of about five minutes were performed for each subject, in variable conditions, e.g., with different shoes and clothes. We asked each subject to walk as she/he felt comfortable with, to mimic real world scenarios.
+
+For the data acquisition, we developed an Android inertial data logger application, which saves accelerometer, gyroscope and magnetometer raw signals, in addition with gravity, linear acceleration and rotation vector evaluated by the Android API.
+
+Data was originally collected for the IDNet project, a deep learning framework for user identification based on gait signatures, but it is now publicly available for further research.
+
+DATASET INFORMATION
+- Each folder refers to a single acquisition session. The folder name contains user and walk ID, e.g., the folder called "u004w002" refers to user 004 and walk 002.
+- Each folder contains 6 files, one for each sensor. The file name ends with the corresponding sensor name.
+- Inertial data is saved into simple text files using extension ".log". Each row contains a single data, separated with tab spacing. The first row of each file indicates the content associated with each column. For example, the following rows refer to gyroscope data, the first column is the timestamp, and the others are x,y and z gyroscope samples respectively.
+
+gyroscope_timestamp    gyroscope_x_data    gyroscope_y_data    gyroscope_z_data
+923709910346175    -1.0365448    -0.09954834    -0.6925659
+923709913001204    -0.9253845    -0.39518738    -0.7451019
+923709918067122    -0.7787628    -0.43551636    -0.7597809
+
+Note that the sampling rate is not uniform, and differs for each sensor.
+
+############################################################
